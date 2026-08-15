@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BotanicaChat } from "@/components/botanicaChat";
+import { BotanicaChat } from "@/components/BotanicaChat";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
