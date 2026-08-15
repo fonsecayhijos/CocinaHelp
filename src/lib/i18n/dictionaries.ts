@@ -46,6 +46,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     features: {
       title: "Por qué CocinaHelp",
       subtitle: "Ideas prácticas para cocinar en casa sin complicarte",
+      imageAlt: "Ingredientes frescos listos para cocinar",
       tags: ["Rápido", "Con lo que tienes", "Pasos claros", "Para casa"],
       items: [
         {
@@ -229,6 +230,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     features: {
       title: "Warum CocinaHelp",
       subtitle: "Praktische Ideen zum Kochen zu Hause",
+      imageAlt: "Frische Zutaten zum Kochen",
       tags: ["Schnell", "Mit dem, was da ist", "Klare Schritte", "Für Zuhause"],
       items: [
         {
@@ -412,6 +414,7 @@ quickPrompts: [
     features: {
       title: "Why CocinaHelp",
       subtitle: "Practical ideas for cooking at home",
+      imageAlt: "Fresh ingredients ready to cook",
       tags: ["Quick", "Use what you have", "Clear steps", "For home"],
       items: [
         {
