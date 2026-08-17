@@ -61,7 +61,7 @@ export function Pricing() {
         )}
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {t.pricing.plans.map((plan: { name: string; price: string; period?: string; description: string; features: string[]; cta: string; highlighted?: boolean }, index: number) => {{
+          {t.pricing.plans.map((plan: { name: string; price: string; period?: string; description: string; features: string[]; cta: string; highlighted?: boolean }, index: number) => {
             const highlighted = Boolean(plan.highlighted);
             const planId = LANDING_PLAN_IDS[index] ?? null;
             const isPaid = planId === "huerto" || planId === "unlimited";
