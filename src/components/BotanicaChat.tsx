@@ -509,7 +509,7 @@ export function BotanicaChat() {
 
         {showQuick && (
           <div className="flex flex-wrap gap-2 border-t border-brand-50 px-3 py-3 sm:px-5">
-            {a.quickPrompts.map((prompt) => (
+            {a.quickPrompts.map((prompt: string) => (
               <button
                 key={prompt}
                 type="button"
