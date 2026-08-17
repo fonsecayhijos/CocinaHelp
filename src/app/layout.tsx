@@ -4,19 +4,16 @@ import { CookieBanner } from "@/components/CookieBanner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CocinaHelp — Ayuda con IA para el cuidado de plantas",
+  title: "CocinaHelp — Recetas con IA a partir de lo que tienes",
   description:
-    "Sube una foto y recibe consejos claros sobre riego, luz, plagas y carencias. Para huerto, balcón, frutas, verduras y plantas de interior en Europa.",
+    "Sube una foto de tu nevera o ingredientes y recibe recetas fáciles y claras. Cocina en casa con lo que ya tienes.",
   keywords: [
-    "plantas",
-    "huerto",
-    "verduras",
-    "frutas",
-    "riego",
-    "plagas",
-    "plantas de interior",
-    "balcón",
+    "recetas",
+    "cocina",
+    "nevera",
+    "ingredientes",
     "IA",
+    "comida casera",
     "Europa",
   ],
 };

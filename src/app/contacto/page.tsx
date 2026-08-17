@@ -20,8 +20,8 @@ export default function ContactoPage() {
               Para cualquier consulta sobre el servicio, tu cuenta o facturación, escríbenos a:
             </p>
             <p>
-              <a href="mailto:info@CocinaHelp.com" className="font-semibold text-brand-700 hover:underline">
-                info@CocinaHelp.com
+              <a href="mailto:fonsecayhijos@gmail.com" className="font-semibold text-brand-700 hover:underline">
+                fonsecayhijos@gmail.com
               </a>
             </p>
             <p>Intentamos responder en el menor tiempo posible.</p>

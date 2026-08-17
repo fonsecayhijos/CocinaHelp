@@ -15,7 +15,7 @@ export default function TerminosPage() {
           <div className="mt-6 space-y-4 text-brand-900/90 leading-relaxed">
             <p>
               CocinaHelp es un servicio de orientación sobre el cuidado de recetas e ingredientes mediante inteligencia artificial,
-              operado por Vicente Fonseca Rodríguez y Abdón Fonseca Gual (Chipiona, Cádiz, España).
+              operado por Vicente Fonseca (Chipiona, Cádiz, España).
             </p>
             <p>
               La información ofrecida es orientativa. No sustituye el criterio de un profesional agrónomo,
@@ -26,7 +26,7 @@ export default function TerminosPage() {
               Los pagos y suscripciones se gestionan a través de Stripe.
             </p>
             <p>
-              Puedes cancelar tu suscripción desde tu cuenta o escribiendo a info@CocinaHelp.com.
+              Puedes cancelar tu suscripción desde tu cuenta o escribiendo a fonsecayhijos@gmail.com.
             </p>
             <p>
               Está prohibido el uso ilegal del servicio, el abuso de la plataforma o cualquier intento de dañar el sistema.
@@ -42,7 +42,7 @@ export default function TerminosPage() {
               sin perjuicio de los derechos que correspondan a los consumidores.
             </p>
             <p>
-              Contacto: <a href="mailto:info@CocinaHelp.com" className="font-semibold text-brand-700 hover:underline">info@CocinaHelp.com</a>
+              Contacto: <a href="mailto:fonsecayhijos@gmail.com" className="font-semibold text-brand-700 hover:underline">fonsecayhijos@gmail.com</a>
             </p>
             <p className="text-sm text-brand-800/70">Última actualización: julio 2026.</p>
           </div>

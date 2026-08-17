@@ -14,13 +14,13 @@ export default function PrivacidadPage() {
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-brand-950">Política de privacidad</h1>
           <div className="mt-6 space-y-4 text-brand-900/90 leading-relaxed">
             <p><strong>Responsables:</strong> CocinaHelp.</p>
-            <p><strong>Contacto:</strong> info@CocinaHelp.com</p>
+            <p><strong>Contacto:</strong> fonsecayhijos@gmail.com</p>
             <p><strong>Datos que tratamos:</strong> email, datos de cuenta, uso del asistente, fotos de ingredientes o nevera que subas y datos de pago gestionados por Stripe.</p>
             <p><strong>Finalidad:</strong> prestar el servicio CocinaHelp, gestionar suscripciones, mejorar el asistente y cumplir obligaciones legales.</p>
             <p><strong>Base legal:</strong> ejecución del contrato y, cuando proceda, tu consentimiento.</p>
             <p><strong>Conservación:</strong> mientras mantengas la cuenta o el tiempo exigido por la ley.</p>
             <p><strong>Encargados del tratamiento:</strong> Supabase (infraestructura de datos), Stripe (pagos) y xAI (procesamiento de IA).</p>
-            <p><strong>Derechos:</strong> puedes solicitar acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@CocinaHelp.com.</p>
+            <p><strong>Derechos:</strong> puedes solicitar acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a fonsecayhijos@gmail.com.</p>
             <p>No vendemos tus datos personales a terceros con fines comerciales.</p>
             
             <h2 className="mt-8 text-xl font-bold text-brand-950">Cookies y tecnologías similares</h2>
@@ -37,8 +37,8 @@ export default function PrivacidadPage() {
             </p>
             <p>
               Puedes cambiar o retirar tu consentimiento en cualquier momento desde el propio banner o escribiéndonos a{' '}
-              <a href="mailto:info@CocinaHelp.com" className="font-semibold text-brand-700 hover:underline">
-                info@CocinaHelp.com
+              <a href="mailto:fonsecayhijos@gmail.com" className="font-semibold text-brand-700 hover:underline">
+                fonsecayhijos@gmail.com
               </a>.
             </p>
             <p>No vendemos tus datos personales.</p>
