@@ -24,7 +24,7 @@ export function HowItWorks() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {t.howItWorks.steps.map((step, i) => (
+          {t.howItWorks.steps.map((step: { title: string; description: string }, i: number) => (
             <article
               key={step.title}
               className="relative rounded-2xl border border-brand-100 bg-gradient-to-b from-brand-50/80 to-white p-6 shadow-sm transition hover:border-brand-200 hover:shadow-md"

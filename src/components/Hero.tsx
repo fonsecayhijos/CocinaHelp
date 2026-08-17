@@ -49,7 +49,7 @@ export function Hero() {
           </div>
 
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-brand-700/90">
-            {t.features.items.slice(0, 3).map((item) => (
+            {{t.features.items.slice(0, 3).map((item: { title: string; description: string }) => (
               <li key={item.title} className="flex items-center gap-1.5">
                 <CheckIcon /> {item.title}
               </li>

@@ -61,7 +61,7 @@ export function Pricing() {
         )}
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {t.pricing.plans.map((plan, index) => {
+          {t.pricing.plans.map((plan: { name: string; price: string; period?: string; description: string; features: string[]; cta: string; highlighted?: boolean }, index: number) => {{
             const highlighted = Boolean(plan.highlighted);
             const planId = LANDING_PLAN_IDS[index] ?? null;
             const isPaid = planId === "huerto" || planId === "unlimited";
@@ -107,7 +107,7 @@ export function Pricing() {
                 </div>
 
                 <ul className="mt-6 flex-1 space-y-3">
-                  {plan.features.map((feature) => (
+                  {plan.features.map((feature: string) => (
                     <li key={feature} className="flex items-start gap-2 text-sm">
                       <svg
                         className={`mt-0.5 h-4 w-4 shrink-0 ${highlighted ? "text-brand-200" : "text-brand-500"}`}
