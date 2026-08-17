@@ -13,10 +13,10 @@ export function Pricing() {
     setError(null);
     setLoading(true);
     try {
-      const res = await fetch("/api/checkout", {
+      const res = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ plan: "huerto" }),
+        body: JSON.stringify({ planId: "huerto" }),
       });
       const data = (await res.json()) as { url?: string; error?: string };
       if (!res.ok || !data.url) {
