@@ -440,8 +440,7 @@ quickPrompts: [
       redirecting: "Redirecting…",
       perMonth: "/month",
     },
-      ],
-    },
+     
     cta: {
       title: "Ready to decide what to cook?",
       subtitle: "Try one free query and get a step-by-step recipe.",
