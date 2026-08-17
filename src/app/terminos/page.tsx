@@ -21,7 +21,7 @@ export default function TerminosPage() {
               La información y las recetas generadas son orientativas. No sustituyen el criterio de un profesional de la nutrición o de la salud. Tú eres responsable de lo que cocinas y consumes. Si tienes alergias o restricciones, consulta a un especialista.
             </p>
             <p>
-              Ofrecemos planes Gratuitos y de pago (Huerto e Ilimitado). Los precios y límites se indican en la web.
+              Ofrecemos planes Gratuitos y de pago. Los precios y límites se indican en la web.
               Los pagos y suscripciones se gestionan a través de Stripe.
             </p>
             <p>
