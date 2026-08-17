@@ -14,14 +14,14 @@ export default function TerminosPage() {
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-brand-950">Términos y condiciones</h1>
           <div className="mt-6 space-y-4 text-brand-900/90 leading-relaxed">
             <p>
-              CocinaHelp es un servicio de orientación sobre el cuidado de recetas e ingredientes mediante inteligencia artificial,
-              operado por Vicente Fonseca (Chipiona, Cádiz, España).
+              CocinaHelp es un servicio de orientación sobre el cuidado de recetas e ingredientes mediante inteligencia artificial.
             </p>
             <p>
               La información y las recetas generadas son orientativas. No sustituyen el criterio de un profesional de la nutrición o de la salud. Tú eres responsable de lo que cocinas y consumes. Si tienes alergias o restricciones, consulta a un especialista.
             </p>
-            <p>
-              Ofrecemos planes Gratuitos y de pago. Los precios y límites se indican en la web.
+             <p>
+              Ofrecemos un plan gratuito (con límite de uso) y planes de pago mensuales.
+              Los precios y límites se indican en la web.
               Los pagos y suscripciones se gestionan a través de Stripe.
             </p>
             <p>
