@@ -266,7 +266,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       redirecting: "Weiterleitung…",
       perMonth: "/Monat",
     },
-      cta: {
+      
+     cta: {
       title: "Bereit zu entscheiden, was du kochst?",
       subtitle:
         "Teste eine kostenlose Anfrage und erhalte ein Rezept Schritt für Schritt.",
