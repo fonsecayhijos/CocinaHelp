@@ -22,7 +22,7 @@ export function Features() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-950/40 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
-              {t.features.tags.map((tag) => (
+              {t.features.tags.map((tag: string) => (
                 <span
                   key={tag}
                   className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-800 backdrop-blur"
