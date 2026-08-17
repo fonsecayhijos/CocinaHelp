@@ -42,7 +42,7 @@ export function Features() {
             </p>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-              {t.features.items.map((item, i) => (
+              {t.features.items.map((item: { title: string; description: string }, i: number) => (
                 <li
                   key={item.title}
                   className="rounded-2xl border border-brand-100 bg-white p-4 shadow-sm"
