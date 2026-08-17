@@ -1,4 +1,4 @@
-import type { Dictionary, Locale } from "./types";
+import type { Dictionary, Locale } from "@/lib/i18n/types";
 
 export const dictionaries: Record<Locale, Dictionary> = {
   es: {
