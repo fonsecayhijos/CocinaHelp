@@ -25,7 +25,7 @@ const RECETAS = [
     time: "30–40 min",
     idea: "Huevos, patatas, cebolla, aceite, sal",
     image:
-      "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=900&q=80",
+      "/recetas/tortilla.jpg",
     alt: "Tortilla de patatas",
   },
   {
@@ -33,7 +33,7 @@ const RECETAS = [
     time: "25 min",
     idea: "Pechuga de pollo, aceite, limón, ajo, sal y pimienta",
     image:
-      "https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80",
+      "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&q=80",
     alt: "Pollo a la plancha con guarnición",
   },
   {
@@ -65,7 +65,7 @@ const RECETAS = [
     time: "15 min",
     idea: "Huevos, pimiento, cebolla, aceite, sal",
     image:
-      "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=900&q=80",
+      "/recetas/revuelto.jpg",
     alt: "Huevos revueltos con verduras",
   },
 ] as const;
