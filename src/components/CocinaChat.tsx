@@ -40,6 +40,67 @@ function uid() {
 
 function formatMessage(text: string) {
   return text.split("\n").map((line, i) => {
+    const trimmed = line.trim();
+
+    // Títulos ### o ##
+    if (trimmed.startsWith("### ")) {
+      return (
+        <p key={i} className={`break-words font-bold text-brand-950 ${i > 0 ? "mt-3" : ""}`}>
+          {trimmed.slice(4)}
+        </p>
+      );
+    }
+    if (trimmed.startsWith("## ")) {
+      return (
+        <p key={i} className={`break-words text-base font-bold text-brand-950 ${i > 0 ? "mt-3" : ""}`}>
+          {trimmed.slice(3)}
+        </p>
+      );
+    }
+
+    // Listas - o *
+    const listMatch = trimmed.match(/^[-*]\s+(.*)$/);
+    if (listMatch) {
+      const parts = listMatch[1].split(/(\*\*[^*]+\*\*)/g).map((chunk, j) => {
+        if (chunk.startsWith("**") && chunk.endsWith("**")) {
+          return (
+            <strong key={j} className="font-semibold">
+              {chunk.slice(2, -2)}
+            </strong>
+          );
+        }
+        return <span key={j}>{chunk}</span>;
+      });
+      return (
+        <p key={i} className={`break-words pl-3 ${i > 0 ? "mt-1" : ""}`}>
+          <span className="mr-1.5 text-brand-600">•</span>
+          {parts}
+        </p>
+      );
+    }
+
+    // Numeradas 1. 2.
+    const numMatch = trimmed.match(/^(\d+)\.\s+(.*)$/);
+    if (numMatch) {
+      const parts = numMatch[2].split(/(\*\*[^*]+\*\*)/g).map((chunk, j) => {
+        if (chunk.startsWith("**") && chunk.endsWith("**")) {
+          return (
+            <strong key={j} className="font-semibold">
+              {chunk.slice(2, -2)}
+            </strong>
+          );
+        }
+        return <span key={j}>{chunk}</span>;
+      });
+      return (
+        <p key={i} className={`break-words ${i > 0 ? "mt-1.5" : ""}`}>
+          <span className="mr-1 font-semibold text-brand-700">{numMatch[1]}.</span>
+          {parts}
+        </p>
+      );
+    }
+
+    // Línea normal con **negrita**
     const parts = line.split(/(\*\*[^*]+\*\*)/g).map((chunk, j) => {
       if (chunk.startsWith("**") && chunk.endsWith("**")) {
         return (
@@ -58,7 +119,7 @@ function formatMessage(text: string) {
   });
 }
 
-export function BotanicaChat() {
+export function CocinaChat() {
   const { t, locale } = useLanguage();
   const a = t.assistant;
 
@@ -112,7 +173,7 @@ export function BotanicaChat() {
         const {
           data: { user },
         } = await supabase.auth.getUser();
-        const metaPlan = user?.user_metadata?.botanic_plan as string | undefined;
+        const metaPlan = user?.user_metadata?.cocina_plan as string | undefined;
         if (!cancelled && metaPlan) {
           const id = normalizePlanId(metaPlan);
           if (id !== "free" || metaPlan === "free") {

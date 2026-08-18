@@ -61,14 +61,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           title: "Pasos claros",
-          description:
-            "Ingredientes, tiempos y elaboración paso a paso.",
+          description: "Ingredientes, tiempos y elaboración paso a paso.",
         },
       ],
     },
-    
-
-     pricing: {
+    pricing: {
       title: "Planes",
       subtitle: "Prueba una vez gratis. Si te encaja, 5,99 € al mes.",
       freeName: "Gratis",
@@ -91,37 +88,60 @@ export const dictionaries: Record<Locale, Dictionary> = {
       redirecting: "Redirigiendo…",
       perMonth: "/mes",
     },
-
     cta: {
       title: "¿Listo para decidir qué cocinar?",
       subtitle: "Prueba una consulta gratis y recibe una receta paso a paso.",
       button: "Empezar gratis",
     },
-   assistant: {
+    assistant: {
       title: "Asistente de CocinaHelp",
       subtitle:
         "Escribe lo que tienes o sube una foto y te proponemos una receta fácil paso a paso.",
+      chatTitle: "Chat de cocina",
+      topicsHint: "Recetas · Nevera · Rápido · Fácil",
+      chatWelcome:
+        "¡Hola! Soy el asistente de CocinaHelp. Dime qué tienes en la nevera o sube una foto y te propongo una receta fácil paso a paso.",
+      chatPlaceholder: "Ej.: Tengo pasta, tomate y ajo…",
+      chatSend: "Enviar",
+      clearChat: "Vaciar chat",
+      typing: "Preparando tu receta…",
+      uploadButton: "Subir foto",
       uploadHint: "JPG, PNG o WEBP — se comprime en el navegador",
+      removePhoto: "Quitar foto",
       placeholder: "Ej.: tengo pasta, tomate, ajo y queso…",
       send: "Enviar",
       thinking: "Preparando tu receta…",
       error: "No se pudo obtener la respuesta. Inténtalo de nuevo.",
       greeting:
-        "Hola, soy el asistente de CocinaHelp. Dime qué tienes en casa o sube una foto y te propongo una receta.",
+        "¡Hola! Soy el asistente de CocinaHelp. Dime qué tienes en casa o sube una foto y te propongo una receta.",
       quickPrompts: [
         "Tengo pasta, tomate y ajo",
         "Quiero algo en 20 minutos",
         "Solo huevos y patatas",
         "Cena fácil con pollo",
       ],
-      limitMessages:
-        "Has llegado al límite de mensajes de este periodo. Pasa al plan de pago o espera al próximo ciclo.",
-      limitPhotos: "Has llegado al límite de fotos de este periodo.",
-      limitPhotosPerMsg:
-        "Demasiadas fotos en un solo mensaje. Prueba con menos.",
+      planLabel: "Plan",
+      planFree: "Gratis",
+      planHuerto: "CocinaHelp",
+      planUnlimited: "Ilimitado",
       usageMessages: "Mensajes",
       usagePhotos: "Fotos",
       unlimited: "Ilimitado",
+      apiReady: "IA lista",
+      apiMissing: "IA no configurada",
+      apiChecking: "Comprobando…",
+      limitMessages:
+        "Has llegado al límite de mensajes de este periodo. Pasa al plan de pago o espera al próximo ciclo.",
+      limitPhotos:
+        "Has llegado al límite de fotos de este periodo. Pasa al plan de pago o espera al próximo ciclo.",
+      limitPhotosPerMsg:
+        "Demasiadas fotos en un solo mensaje. Prueba con menos.",
+      errorImage: "No se pudo procesar la imagen.",
+      errorGeneric: "No se pudo obtener la respuesta. Inténtalo de nuevo.",
+      comingSoon:
+        "El asistente no está disponible ahora mismo. Revisa la configuración de la API.",
+      disclaimer:
+        "Información orientativa. Revisa alérgenos e ingredientes. Tú eres responsable de lo que cocinas.",
     },
     footer: {
       tagline: "Recetas fáciles con lo que tienes en casa.",
@@ -177,7 +197,6 @@ export const dictionaries: Record<Locale, Dictionary> = {
       askAssistant: "Pedir receta al asistente",
     },
   },
-
   de: {
     nav: {
       howItWorks: "So funktioniert’s",
@@ -238,8 +257,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           title: "Klare Schritte",
-          description:
-            "Zutaten, Zeiten und Zubereitung Schritt für Schritt.",
+          description: "Zutaten, Zeiten und Zubereitung Schritt für Schritt.",
         },
       ],
     },
@@ -266,8 +284,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       redirecting: "Weiterleitung…",
       perMonth: "/Monat",
     },
-      
-     cta: {
+    cta: {
       title: "Bereit zu entscheiden, was du kochst?",
       subtitle:
         "Teste eine kostenlose Anfrage und erhalte ein Rezept Schritt für Schritt.",
@@ -277,26 +294,51 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title: "CocinaHelp Assistent",
       subtitle:
         "Schreib, was du hast, oder lade ein Foto hoch – wir schlagen ein einfaches Rezept vor.",
+      chatTitle: "Koch-Chat",
+      topicsHint: "Rezepte · Kühlschrank · Schnell · Einfach",
+      chatWelcome:
+        "Hallo! Ich bin der CocinaHelp-Assistent. Sag mir, was im Kühlschrank ist, oder lade ein Foto hoch – ich schlage ein einfaches Rezept vor.",
+      chatPlaceholder: "Z. B.: Ich habe Nudeln, Tomaten und Knoblauch…",
+      chatSend: "Senden",
+      clearChat: "Chat leeren",
+      typing: "Rezept wird vorbereitet…",
+      uploadButton: "Foto hochladen",
       uploadHint: "JPG, PNG oder WEBP – wird im Browser komprimiert",
+      removePhoto: "Foto entfernen",
       placeholder: "Z. B.: Ich habe Nudeln, Tomaten, Knoblauch und Käse…",
       send: "Senden",
       thinking: "Rezept wird vorbereitet…",
       error: "Antwort fehlgeschlagen. Bitte erneut versuchen.",
       greeting:
         "Hallo, ich bin der CocinaHelp-Assistent. Sag mir, was du zu Hause hast, oder lade ein Foto hoch.",
-quickPrompts: [
-  "Ich habe Nudeln, Tomaten und Knoblauch",
-  "Etwas in 20 Minuten",
-  "Nur Eier und Kartoffeln",
-  "Einfaches Abendessen mit Hähnchen",
-],      limitMessages:
-        "Du hast das Nachrichtenlimit für diesen Zeitraum erreicht. Wechsle zum Abo oder warte auf den nächsten Zyklus.",
-      limitPhotos: "Du hast das Fotolimit für diesen Zeitraum erreicht.",
-      limitPhotosPerMsg:
-        "Zu viele Fotos in einer Nachricht. Bitte weniger senden.",
+      quickPrompts: [
+        "Ich habe Nudeln, Tomaten und Knoblauch",
+        "Etwas in 20 Minuten",
+        "Nur Eier und Kartoffeln",
+        "Einfaches Abendessen mit Hähnchen",
+      ],
+      planLabel: "Plan",
+      planFree: "Kostenlos",
+      planHuerto: "CocinaHelp",
+      planUnlimited: "Unbegrenzt",
       usageMessages: "Nachrichten",
       usagePhotos: "Fotos",
       unlimited: "Unbegrenzt",
+      apiReady: "KI bereit",
+      apiMissing: "KI nicht konfiguriert",
+      apiChecking: "Prüfen…",
+      limitMessages:
+        "Du hast das Nachrichtenlimit für diesen Zeitraum erreicht. Wechsle zum Abo oder warte auf den nächsten Zyklus.",
+      limitPhotos:
+        "Du hast das Fotolimit für diesen Zeitraum erreicht. Wechsle zum Abo oder warte auf den nächsten Zyklus.",
+      limitPhotosPerMsg:
+        "Zu viele Fotos in einer Nachricht. Bitte weniger senden.",
+      errorImage: "Bild konnte nicht verarbeitet werden.",
+      errorGeneric: "Antwort fehlgeschlagen. Bitte erneut versuchen.",
+      comingSoon:
+        "Der Assistent ist gerade nicht verfügbar. Bitte API-Konfiguration prüfen.",
+      disclaimer:
+        "Orientierende Hinweise. Allergene und Zutaten prüfen. Du bist für das Kochen verantwortlich.",
     },
     footer: {
       tagline: "Einfache Rezepte mit dem, was du zu Hause hast.",
@@ -352,7 +394,6 @@ quickPrompts: [
       askAssistant: "Rezept vom Assistenten holen",
     },
   },
-
   en: {
     nav: {
       howItWorks: "How it works",
@@ -413,8 +454,7 @@ quickPrompts: [
         },
         {
           title: "Clear steps",
-          description:
-            "Ingredients, times and step-by-step instructions.",
+          description: "Ingredients, times and step-by-step instructions.",
         },
       ],
     },
@@ -441,7 +481,6 @@ quickPrompts: [
       redirecting: "Redirecting…",
       perMonth: "/month",
     },
-     
     cta: {
       title: "Ready to decide what to cook?",
       subtitle: "Try one free query and get a step-by-step recipe.",
@@ -451,26 +490,50 @@ quickPrompts: [
       title: "CocinaHelp Assistant",
       subtitle:
         "Type what you have or upload a photo and we’ll suggest an easy recipe step by step.",
+      chatTitle: "Cooking chat",
+      topicsHint: "Recipes · Fridge · Quick · Easy",
+      chatWelcome:
+        "Hi! I’m the CocinaHelp assistant. Tell me what’s in your fridge or upload a photo and I’ll suggest an easy step-by-step recipe.",
+      chatPlaceholder: "e.g. I have pasta, tomatoes and garlic…",
+      chatSend: "Send",
+      clearChat: "Clear chat",
+      typing: "Preparing your recipe…",
+      uploadButton: "Upload photo",
       uploadHint: "JPG, PNG or WEBP — compressed in the browser",
+      removePhoto: "Remove photo",
       placeholder: "e.g. I have pasta, tomatoes, garlic and cheese…",
       send: "Send",
       thinking: "Preparing your recipe…",
       error: "Could not get a response. Please try again.",
       greeting:
         "Hi, I’m the CocinaHelp assistant. Tell me what you have at home or upload a photo and I’ll suggest a recipe.",
-quickPrompts: [
-  "Ich habe Nudeln, Tomaten und Knoblauch",
-  "Etwas in 20 Minuten",
-  "Nur Eier und Kartoffeln",
-  "Einfaches Abendessen mit Hähnchen",
-],      limitMessages:
-        "You’ve reached the message limit for this period. Upgrade or wait for the next cycle.",
-      limitPhotos: "You’ve reached the photo limit for this period.",
-      limitPhotosPerMsg:
-        "Too many photos in one message. Try fewer.",
+      quickPrompts: [
+        "I have pasta, tomatoes and garlic",
+        "Something in 20 minutes",
+        "Only eggs and potatoes",
+        "Easy dinner with chicken",
+      ],
+      planLabel: "Plan",
+      planFree: "Free",
+      planHuerto: "CocinaHelp",
+      planUnlimited: "Unlimited",
       usageMessages: "Messages",
       usagePhotos: "Photos",
       unlimited: "Unlimited",
+      apiReady: "AI ready",
+      apiMissing: "AI not configured",
+      apiChecking: "Checking…",
+      limitMessages:
+        "You’ve reached the message limit for this period. Upgrade or wait for the next cycle.",
+      limitPhotos:
+        "You’ve reached the photo limit for this period. Upgrade or wait for the next cycle.",
+      limitPhotosPerMsg: "Too many photos in one message. Try fewer.",
+      errorImage: "Could not process the image.",
+      errorGeneric: "Could not get a response. Please try again.",
+      comingSoon:
+        "The assistant is unavailable right now. Check the API configuration.",
+      disclaimer:
+        "Indicative information only. Check allergens and ingredients. You are responsible for what you cook.",
     },
     footer: {
       tagline: "Easy recipes with what you already have at home.",
