@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BotanicaChat } from "@/components/BotanicaChat";
+import { CocinaChat } from "@/components/CocinaChat";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -28,7 +28,7 @@ export default function AyudaPage() {
               {t.assistant.subtitle}
             </p>
           </div>
-          <BotanicaChat />
+          <CocinaChat />
         </div>
       </main>
       <Footer />
